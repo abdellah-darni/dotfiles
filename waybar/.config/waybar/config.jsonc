@@ -1,5 +1,7 @@
 {
   "position": "top",
+  "fixed-center": true,
+  
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
@@ -11,6 +13,12 @@
     "pulseaudio", 
     "clock"
   ],
+
+  "hyprland/window": {
+    "max-length": 50,
+    "ellipsis": "...",
+    "tooltip": false
+  },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
