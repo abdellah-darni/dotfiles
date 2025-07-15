@@ -115,3 +115,6 @@ source <(fzf --zsh)
 
 eval "$(starship init zsh)"
 
+
+# Created by `pipx` on 2025-07-15 19:24:58
+export PATH="$PATH:/home/abde/.local/bin"

@@ -1,0 +1,6 @@
+catppuccin-gtk-theme-mocha
+lazydocker
+visual-studio-code-bin
+yay
+yay-debug
+zen-browser-bin
