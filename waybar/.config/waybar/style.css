@@ -1,8 +1,8 @@
-@import "mocha.css"; 
+@import "mocha.css";
 
 * {
     font-family: "MesloLGS Nerd Font Mono Bold";
-    font-size: 16px;
+    font-size: 15px;
     min-height: 0;
     font-weight: bold;
 }
@@ -14,12 +14,6 @@ window#waybar {
     transition-property: background-color;
     transition-duration: 0.1s;
     border-bottom: 0px solid @overlay1;
-}
-
-#window {
-    margin: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 button {
@@ -54,111 +48,72 @@ button:hover {
     background-color: #eb4d4b;
 }
 
+/* Base styling for all modules */
 #pulseaudio,
 #clock,
 #cpu,
 #memory,
-#temperature,
 #tray,
-#network,
-#mode,
-#scratchpad {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-left: 1px;
-  padding-right: 1px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 0px;
+#network {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 8px;
+    padding-right: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
 }
+
+
 
 #clock {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
 }
 
 #clock.date {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
 }
 
 #pulseaudio {
     color: @blue;
-    border-bottom: 2px solid @blue;
 }
 
 #network {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
 }
-
-#idle_inhibitor {
-    margin-right: 12px;
-    color: #7cb342;
-}
-
-#idle_inhibitor.activated {
-    color: @red;
-}
-
-/* Desktop-specific: Battery and backlight styles (commented out for desktop use)
-#battery {
-    color: @green;
-    border-bottom: 2px solid @green;
-}
-
-#backlight {
-    color: @sky;
-    border-bottom: 2px solid @sky;
-}
-*/
 
 #cpu {
     color: @peach;
-    border-bottom: 2px solid @peach;
 }
 
 #cpu.warning {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
 }
 
 #cpu.critical {
     color: @red;
-    border-bottom: 2px solid @red;
 }
 
 #memory {
     color: @sapphire;
-    border-bottom: 2px solid @sapphire;
 }
 
 #memory.warning {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
 }
 
 #memory.critical {
     color: @red;
-    border-bottom: 2px solid @red;
 }
 
-#temperature {
-    color: @flamingo;
-    border-bottom: 2px solid @flamingo;
+#tray {
+    /* Inherits base module styling */
 }
 
-#temperature.critical {
-    color: @red;
-    border-bottom: 2px solid @red;
-}
-
-#network#speed {
-    color: @pink;
-    border-bottom: 2px solid @pink;
-    font-family: "MesloLGS Nerd Font Mono", monospace;
-    font-size: 14px;
+/* Add extra spacing between right modules */
+.modules-right > widget:not(:first-child) > * {
+    margin-left: 10px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -169,11 +124,4 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#custom-vpn {
-    color: @lavender;
-    border-radius: 0px;
-    padding-left: 6px;
-    padding-right: 6px;
 }
