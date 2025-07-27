@@ -10,6 +10,7 @@ efibootmgr
 epiphany
 evince
 eza
+fastfetch
 fd
 fzf
 gdb
@@ -81,10 +82,12 @@ nodejs
 npm
 nwg-look
 orca
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
-pipewire-pulse
+pulseaudio
+pulseaudio-alsa
 python-pip
 python-pipx
 ripgrep
