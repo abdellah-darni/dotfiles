@@ -1,5 +1,5 @@
 catppuccin-gtk-theme-mocha
-lazydocker
+lazydocker-debug
 visual-studio-code-bin
 yay
 yay-debug
