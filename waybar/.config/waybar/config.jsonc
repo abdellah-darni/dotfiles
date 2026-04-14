@@ -60,7 +60,7 @@
     "tooltip-format-ethernet": "{ifname} 󰌘",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "max-length": 30,
-    "on-click": "$HOME/.config/waybar/wifi-manager.sh",
+    "on-click": "$HOME/.config/waybar/nm-connection-editor",
     "interval": 3,
     "nospacing": 1
   },
