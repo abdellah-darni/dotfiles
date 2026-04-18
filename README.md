@@ -173,4 +173,3 @@ stow -D nvim
 
 - The Hyprland config includes VM-specific overrides at the bottom (`Virtual-1` monitor, software rendering env vars) — remove or adjust these on bare metal
 - Hypridle and Hyprlock are configured but idle locking is commented out — uncomment the listener block in `hypridle.conf` to enable auto-lock
-- The wallpaper script (`scripts/wallpaper.sh`) rotates through backgrounds stored in `~/.config/backgrounds/`
